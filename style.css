@@ -1,0 +1,27 @@
+/* GLOBAL */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* GAME BOARD */
+.board {
+    height: 25rem;                          /* Set size of game board */
+    width: 25rem;
+    margin: 0 auto;
+    
+    display: grid;                          /* Display grids in 3x3 form */
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    border: solid 1px black;
+}
+
+.grid {
+    border: solid 1px black;                /* Align X and O's inside each grid */
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 5rem;
+}
